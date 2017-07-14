@@ -6,8 +6,14 @@
 ```bash
   rails s
 ```
-
-
-```ruby
-  puts "hello"
+2. Do this in another tab of Terminal to run console to debug or check database.
+   You can also change database values through this.
+```bash
+  rails c
+  @user = User.first
+  @user.user_id = 1
+  @user.save
 ```
+3. "rake routes" will show useful routes that may have been created via gems
+
+4.  

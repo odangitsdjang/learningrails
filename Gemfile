@@ -30,6 +30,7 @@ gem 'jbuilder', '~> 2.5'
 
 # Gems added by me - David Jang
 gem 'devise', '~> 4.3'  # authentication system
+gem 'kaminari', '~> 0.16.3' # pagination for blog
 
 
 

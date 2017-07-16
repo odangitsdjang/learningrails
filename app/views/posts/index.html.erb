@@ -1,6 +1,49 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Posts</h1>
+<h1>David's Blog Posts</h1>
+
+<hr/>
+
+<% @posts.each do |post| %>
+  <h2> <%= link_to post.title, post %>  </h2>
+  <p>
+  <%= post.body %>
+  </p>
+<% end %>
+<hr/>
+
+  <%= paginate @posts %>
+  <%= page_entries_info @posts %>
+<br>
+<%= link_to 'New Post', new_post_path %>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<% if false %>
+default posts page
+
+<p id="notice"><%= notice %></p>
+
+<h1>David's Blog Posts</h1>
 
 <table>
   <thead>
@@ -26,4 +69,6 @@
 
 <br>
 
+
 <%= link_to 'New Post', new_post_path %>
+<% end %>

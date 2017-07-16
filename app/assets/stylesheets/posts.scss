@@ -1,8 +1,7 @@
 // design color schemes from https://designschool.canva.com/blog/website-color-schemes/
-posts {
 
 
-}
+$white:   #FFFFFF;
 // neon color scheme
 $void:    #0E0B16;
 $fuschia: #A239CA;
@@ -10,6 +9,29 @@ $jewel:   #4717F6;
 $stark:   #E7DFDD;
 
 
+
+
+posts {
+  width: 50%;
+  float: left;
+  min-height: 400px;
+  color: $white;
+
+
+}
+
+.void {
+  background-color: $void;
+}
+.fuschia {
+  background-color: $fuschia;
+}
+.jewel {
+  background-color: $jewel;
+}
+.stark {
+  background-color: $stark;
+}
 
 /* Warm and bold
 $black:  #000000;

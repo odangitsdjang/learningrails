@@ -1,6 +1,8 @@
 # List of handy things that I've learned that I might forget in the future!
 
 [Mackenzie Child](https://www.youtube.com/user/mackenziechild) has helpful stuff on YouTube
+And as always [Google](https://www.google.com) does wonders
+
 
 1. Do this in Terminal to start a server
 ```bash

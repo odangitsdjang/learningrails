@@ -1,0 +1,34 @@
+$void:    #0E0B16;
+
+footer {
+    margin: 2% auto;
+    background-color: white;
+    text-align: center;
+    height: 10px;
+}
+
+
+#social {
+    padding-top: 20px;
+    padding-left: 0px;
+}
+
+#social li {
+    display: inline-block;
+}
+
+
+.social-i li a {
+    text-decoration: none;
+}
+
+.social-i i {
+    padding: 10px;
+    color: black;
+    font-size: 1.4em;
+}
+
+.social-i i:hover {
+    transform: scale(1.5);
+    background-color: white;
+}

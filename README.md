@@ -8,7 +8,6 @@ I will be using popular gems listed below to create a functional blog:
 2. [paperclip]() for adding image to posts
 3. [gritter]() for minimalistic flash messages
 4. [kaminari](https://github.com/kaminari/kaminari) to paginate blog posts
+5. [Font Awesome Sass](https://github.com/FortAwesome/font-awesome-sass) for icons and fonts (css)
 
-I initially set up devise, scaffolded posts and comments, used paperclip to attach images to it.
-
-Then I
+The steps I used to create this rails app is listed in StepbyStep.md

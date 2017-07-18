@@ -11,3 +11,7 @@
   DROP ROLE f3 # drop role f3
   \q   # to quit
 ```
+3. In terminal this creates a user f3 with super privileges
+```bash
+  createuser f3 -d -s
+```

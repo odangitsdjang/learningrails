@@ -23,3 +23,8 @@ heroku open
 ```
 
 7. I recognized that sqlite3 is not very useful, so I switched db from sqlite3 to postgresql. This took quite a while and is too long to write out.
+
+8. Set it up on AWS free version one. This is the command to connect to the server with ssh
+```bash
+  ssh -i "learningrails.pem" ubuntu@ec2-52-15-183-213.us-east-2.compute.amazonaws.com
+```

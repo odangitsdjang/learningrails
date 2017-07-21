@@ -24,7 +24,21 @@ heroku open
 
 7. I recognized that sqlite3 is not very useful, so I switched db from sqlite3 to postgresql. This took quite a while and is too long to write out.
 
-8. Set it up on AWS free version one. This is the command to connect to the server with ssh
+8. Set up on AWS free version one. This is the command to connect to the server with ssh
 ```bash
   ssh -i "learningrails.pem" ubuntu@ec2-52-15-183-213.us-east-2.compute.amazonaws.com
 ```
+
+9. Decided to go with heroku; some problems and solutions:
+- yarn problem: get rid of package.json in root folder because that makes heroku think we have both Node.js and RoR.
+Then set up heroku:
+```bash
+heroku login
+heroku keys:add
+heroku create
+git push heroku master
+heroku addons:create heroku-postgresql:hobby-dev # creates postgresql db
+heroku run rails db:migrate # manually migrates the data (finishes setting up database)
+```
+
+10. Add fonts folder in assets/ and make sure it is being processed by adding an extra line in application.rb

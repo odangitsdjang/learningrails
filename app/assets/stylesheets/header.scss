@@ -1,0 +1,44 @@
+header {
+  #header_name {
+    font-family: 'League Gothic';
+    padding: 20px 50px 20px 30px;
+    text-decoration: none;
+    float: left;
+    font-size: 30px;
+    font-weight: 600;
+    height: 50px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+  #header_name:hover {
+    text-decoration: none;
+
+  }
+}
+p:hover {
+  text-decoration: none;
+}
+.navbar {
+    background-color: #FFFFFF;
+    border: none !important;
+    border-width: 0px;
+    padding-bottom: 0px;
+    width: 100%;
+    padding-top: 0;
+    z-index: 100;
+}
+
+
+.navbar-right {
+    padding: 15px 50px 20px 30px;
+    font-size: 18px;
+}
+
+.navbar-default .navbar-collapse {
+    border-color: #FFFFFF;
+}
+
+.navbar-toggle {
+    margin-top: 6%;
+    margin-bottom: 6%;
+}

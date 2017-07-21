@@ -29,9 +29,11 @@ gem 'jbuilder', '~> 2.5'
 # Gems added by me - David Jang
 gem 'devise', '~> 4.3'  # authentication system
 gem 'kaminari', '~> 0.16.3' # pagination for blog
+gem 'bootstrap-kaminari-views' # bootstrap themeing pagination
 gem 'font-awesome-sass', '~> 4.7.0' # css-ing
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.6' # more css-ing
 gem 'pg'  # removed sqlite3, using postgresql
+
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
@@ -55,3 +57,4 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+ruby '2.3.1'

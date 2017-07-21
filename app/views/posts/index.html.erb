@@ -1,23 +1,26 @@
-<p id="notice"><%= notice %></p>
 
-<h1>David's Blog Posts</h1>
+<h1 style = "text-align:center;">David's Blog Posts</h1>
 
 <hr/>
 
-<% @posts.each do |post| %>
-  <h2> <%= link_to post.title, post %>  </h2>
-  <p>
-  <%= post.body %>
-  </p>
-<% end %>
-<hr/>
 
-  <%= paginate @posts %>
-  <%= page_entries_info @posts %>
-<br>
-<%= link_to 'New Post', new_post_path %>
+<div class="centered">
+  <p id="notice"><%= notice %></p>
 
+  <% @posts.each do |post| %>
+    <h2> <%= link_to post.title, post %>  </h2>
+    <p>
+    <%= post.body %>
+    </p>
+  <% end %>
+  <hr/>
 
+    <%= paginate @posts, :theme => 'twitter-bootstrap-3'%>
+  <p>   <%= page_entries_info @posts %> </p>
+  <br>
+  <p> <%= link_to 'Create New Post!', new_post_path %> </p>
+
+</div>
 
 
 

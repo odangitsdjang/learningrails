@@ -1,9 +1,9 @@
 class PostsController < ApplicationController
   before_action :set_post, only: [:show, :edit, :update, :destroy]
-
   # GET /posts
   # GET /posts.json
   def index
+    @CHAR_LENGTH = 400  # CONSTANT CHAR LENGTH TO DISPLAY PER POST
      @posts = Post.order('created_at DESC').page(params.permit![:page]).per(10)
   end
 

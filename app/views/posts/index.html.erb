@@ -6,11 +6,15 @@
 
 <div class="centered">
   <p id="notice"><%= notice %></p>
-
   <% @posts.each do |post| %>
     <h2> <%= link_to post.title, post %>  </h2>
     <p>
-    <%= post.body %>
+    <% if post.body.length > @CHAR_LENGTH  %>
+      <%= post.body[0..@CHAR_LENGTH] + "..." %>
+      <% next %>
+    <% else %>
+      <%= post.body %>
+    <% end %>
     </p>
   <% end %>
   <hr/>

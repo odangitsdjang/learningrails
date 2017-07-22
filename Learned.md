@@ -10,7 +10,7 @@ And as always [Google](https://www.google.com) does wonders.
   rails s
 ```
 2. Do this in another tab of Terminal to run console to debug or check database.
-   You can also change database values through this. This is for sqlite3:
+   You can also change database values through this. 
 ```bash
   rails c
   @user = User.first

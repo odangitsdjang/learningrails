@@ -45,4 +45,17 @@ heroku run rails db:migrate # manually migrates the data (finishes setting up da
 
 11. Worked on more styling / css.
 
-12. Added Activeadmin gem to use with devise. Set up users
+12. Added Activeadmin gem to use with devise. Set up users. Follow instructions in activeadmin github.
+If this effect is to be desired on heroku, need to run the same commands on heroku server. e.g.:
+```bash
+heroku run rails db:migrate
+heroku run rails db:seed # for default admin setup
+```
+After that, check project.com/admin to set up admin users or you can always use command line.
+
+13. Also wanna add Posts and Users to active admin to make it easier to see stuff
+```bash
+rails g active_admin:resource Post
+rails g active_admin:resource User
+```
+14. Stuck on active_admin posts <Unfiltered Params> <Strong Params> issue with kaminari/active admin. If I remove post.rb in active admin it solves issues but I really want that implemented. 

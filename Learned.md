@@ -10,12 +10,14 @@ And as always [Google](https://www.google.com) does wonders.
   rails s
 ```
 2. Do this in another tab of Terminal to run console to debug or check database.
-   You can also change database values through this. 
+   You can also change database values through this.
 ```bash
   rails c
   @user = User.first
   @user.user_id = 1
   @user.save
+
+  Post.column_names   
 ```
 3. "rake routes" will show useful routes that may have been created via gems
 

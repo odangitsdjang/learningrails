@@ -1,6 +1,9 @@
 /*
  * Got rid of require statements to use @import. This is for bootstrap-sass
+ * @import "active_admin";
  */
+
+
 
   @import "bootstrap-sprockets";
   @import "bootstrap";

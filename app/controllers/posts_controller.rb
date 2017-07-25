@@ -4,7 +4,7 @@ class PostsController < ApplicationController
   # GET /posts.json
   def index
     @CHAR_LENGTH = 400  # CONSTANT CHAR LENGTH TO DISPLAY PER POST
-    @posts = Post.order('created_at DESC').page(params.permit![:page]).per(10)
+    @posts = Post.order('created_at DESC').per_page_kaminari(params.permit![:page]).per(10)
   end
 
   # GET /posts/1

@@ -10,7 +10,7 @@
     <h2> <%= link_to post.title, post %>  </h2>
     <p>
     <% if post.body.length > @CHAR_LENGTH  %>
-      <%= post.body[0..@CHAR_LENGTH] + "..." %>
+      <%= post.body[0..@CHAR_LENGTH] + " ..." %>
       <% next %>
     <% else %>
       <%= post.body %>

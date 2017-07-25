@@ -7,4 +7,7 @@ Kaminari.configure do |config|
   # config.right = 0
   # config.page_method_name = :page
   # config.param_name = :page
+  Kaminari.configure do |config|
+    config.page_method_name = :per_page_kaminari
+  end
 end

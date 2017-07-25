@@ -41,11 +41,8 @@
   </head>
 
   <body>
-    <!-- flash messages -->
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
-
     <%= render "layouts/header" %>
+    <%= render "layouts/alerts" %>
     <%= yield %>
     <%= render "layouts/footer" %>
   </body>

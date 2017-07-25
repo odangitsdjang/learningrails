@@ -27,12 +27,15 @@ gem 'jbuilder', '~> 2.5'
 # gem 'bcrypt', '~> 3.1.7'
 
 # Gems added by me - David Jang
+gem 'activeadmin' # nice backend framework to use with devise
+gem 'inherited_resources'  # to support activeadmin
 gem 'devise', '~> 4.3'  # authentication system
 gem 'kaminari', '~> 0.16.3' # pagination for blog
 gem 'bootstrap-kaminari-views' # bootstrap themeing pagination
 gem 'font-awesome-sass', '~> 4.7.0' # css-ing
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.6' # more css-ing
 gem 'pg'  # removed sqlite3, using postgresql
+
 
 
 # Use Capistrano for deployment

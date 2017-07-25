@@ -42,3 +42,7 @@ heroku run rails db:migrate # manually migrates the data (finishes setting up da
 ```
 
 10. Add fonts folder in assets/ and make sure it is being processed by adding an extra line in application.rb
+
+11. Worked on more styling / css.
+
+12. Added Activeadmin gem to use with devise. Set up users

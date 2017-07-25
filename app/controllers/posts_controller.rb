@@ -4,7 +4,7 @@ class PostsController < ApplicationController
   # GET /posts.json
   def index
     @CHAR_LENGTH = 400  # CONSTANT CHAR LENGTH TO DISPLAY PER POST
-     @posts = Post.order('created_at DESC').page(params.permit![:page]).per(10)
+    @posts = Post.order('created_at DESC').page(params.permit![:page]).per(10)
   end
 
   # GET /posts/1
@@ -28,6 +28,7 @@ class PostsController < ApplicationController
 
     respond_to do |format|
       if @post.save
+        flash[:success]
         format.html { redirect_to posts_url, notice: 'Post was successfully created.' }
         format.json { render :show, status: :created, location: @post }
       else
